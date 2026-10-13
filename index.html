@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sell Your Building in Tampa Bay | Direct Offers on Multifamily and Commercial | Suarez Global</title>
+<meta name="description" content="Sell your multifamily or commercial building in Tampa Bay. Direct buyer. As-is. Tenants in place. No commissions. Call (813) 544-5781.">
+<style>
+:root{--bg:#05080a;--bg2:#0b1114;--green:#19e68c;--green2:#0fb36a;--gold:#f5c542;--gold2:#ffdf7e;--text:#eef3f1;--muted:#9fb0aa;--card:rgba(255,255,255,.04);--line:rgba(255,255,255,.09)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 22px}
+/* aurora */
+.aurora{position:fixed;inset:-20%;z-index:-2;background:radial-gradient(40% 35% at 20% 25%,rgba(25,230,140,.22),transparent 70%),radial-gradient(35% 30% at 80% 20%,rgba(245,197,66,.18),transparent 70%),radial-gradient(45% 40% at 60% 85%,rgba(15,179,106,.16),transparent 70%);filter:blur(30px);animation:drift 18s ease-in-out infinite alternate}
+@keyframes drift{0%{transform:translate(0,0) rotate(0)}100%{transform:translate(4%,-3%) rotate(8deg)}}
+.grid-bg{position:fixed;inset:0;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse at center,#000 30%,transparent 80%)}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(5,8,10,.75);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{font-weight:800;letter-spacing:.5px;font-size:18px;text-decoration:none}
+.logo span{background:linear-gradient(90deg,var(--green),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo small{display:block;font-size:10px;color:var(--muted);font-weight:600;letter-spacing:2px;text-transform:uppercase}
+.call{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:800;padding:10px 16px;border-radius:999px;border:1px solid rgba(25,230,140,.5);color:var(--green);box-shadow:0 0 18px rgba(25,230,140,.25)}
+.call .dot{width:8px;height:8px;border-radius:50%;background:var(--green);animation:ping 1.6s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(25,230,140,.8)}100%{box-shadow:0 0 0 12px rgba(25,230,140,0)}}
+/* hero */
+.hero{padding:56px 0 64px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);padding:7px 12px;border:1px solid rgba(245,197,66,.35);border-radius:999px;background:rgba(245,197,66,.06)}
+h1{font-size:clamp(36px,5.4vw,64px);line-height:1.04;font-weight:900;margin:18px 0 16px;letter-spacing:-1px}
+.shine{background:linear-gradient(100deg,var(--gold) 0%,var(--gold2) 30%,#fff 45%,var(--gold2) 60%,var(--gold) 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 4s linear infinite}
+@keyframes shine{to{background-position:-250% 0}}
+.lead{font-size:19px;color:#cfdad6;max-width:560px}
+.triad{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
+.triad span{font-weight:700;font-size:14px;padding:8px 12px;border-radius:10px;background:var(--card);border:1px solid var(--line)}
+.triad span::before{content:"✓ ";color:var(--green)}
+.hero-call{margin-top:6px;color:var(--muted)} .hero-call a{color:var(--gold);font-weight:800;text-decoration:none}
+/* glowing form */
+.glow{position:relative;border-radius:22px;padding:2px;isolation:isolate}
+.glow::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:2px;background:conic-gradient(from var(--a),var(--green),transparent 25%,var(--gold),transparent 60%,var(--green));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:spin 4s linear infinite;z-index:-1}
+.glow::after{content:"";position:absolute;inset:-14px;border-radius:30px;background:radial-gradient(closest-side,rgba(25,230,140,.28),transparent);z-index:-2;animation:beat 2.4s ease-in-out infinite}
+@property --a{syntax:"<angle>";initial-value:0deg;inherits:false}
+@keyframes spin{to{--a:360deg}}
+@keyframes beat{0%,100%{opacity:.5;transform:scale(.98)}50%{opacity:1;transform:scale(1.02)}}
+.form{background:linear-gradient(180deg,#0d1518,#081012);border-radius:20px;padding:26px}
+.form h2{font-size:22px;line-height:1.2}
+.form p.sub{color:var(--muted);font-size:14px;margin:6px 0 16px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+label{display:block;font-size:12px;font-weight:700;color:var(--muted);margin:10px 0 5px;letter-spacing:.3px}
+input,select{width:100%;padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:#050a0c;color:var(--text);font-size:16px;font-family:inherit;transition:border .2s,box-shadow .2s}
+input:focus,select:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(25,230,140,.2)}
+.btn{display:block;width:100%;margin-top:16px;padding:17px;border:0;border-radius:14px;font-size:18px;font-weight:900;cursor:pointer;color:#04140c;background:linear-gradient(90deg,var(--green),#7cf5b8,var(--gold));background-size:200% 100%;animation:btnmove 3s linear infinite,pulse 2s infinite;text-align:center;text-decoration:none}
+@keyframes btnmove{to{background-position:-200% 0}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(25,230,140,.6)}70%{box-shadow:0 0 0 16px rgba(25,230,140,0)}100%{box-shadow:0 0 0 0 rgba(25,230,140,0)}}
+.consent{font-size:11.5px;line-height:1.45;color:#b8c6c1;margin-top:10px}.consent a,.fine a{color:var(--gold);text-decoration:underline}
+.fine{font-size:11.5px;color:var(--muted);margin-top:10px}
+.ok{display:none;padding:14px;border-radius:12px;background:rgba(25,230,140,.1);border:1px solid rgba(25,230,140,.4);margin-top:12px;font-weight:700}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:6px}
+.stat{padding:22px;border-radius:16px;background:var(--card);border:1px solid var(--line);text-align:center}
+.stat b{display:block;font-size:34px;font-weight:900;color:var(--green);text-shadow:0 0 20px rgba(25,230,140,.5)}
+.stat span{color:var(--muted);font-size:13px}
+/* sections */
+section{padding:84px 0}
+.kicker{color:var(--gold);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:12px}
+h2.t{font-size:clamp(28px,3.6vw,44px);line-height:1.1;margin:10px 0 14px;font-weight:900}
+.divider{height:2px;width:0;background:linear-gradient(90deg,var(--green),var(--gold));border-radius:2px;margin-bottom:34px;transition:width 1.2s ease}
+.in .divider{width:120px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{position:relative;padding:28px;border-radius:18px;background:var(--card);border:1px solid var(--line);transition:transform .3s,border-color .3s,box-shadow .3s;overflow:hidden}
+.card:hover{transform:translateY(-6px);border-color:rgba(25,230,140,.5);box-shadow:0 18px 50px -18px rgba(25,230,140,.45)}
+.num{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-weight:900;font-size:20px;color:#04140c;background:linear-gradient(135deg,var(--green),var(--gold));margin-bottom:16px;box-shadow:0 0 24px rgba(25,230,140,.45)}
+.card h3{font-size:20px;margin-bottom:8px}
+.card p{color:var(--muted)}
+.types{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.type{padding:22px;border-radius:16px;border:1px solid var(--line);background:linear-gradient(160deg,rgba(25,230,140,.07),rgba(245,197,66,.04));font-weight:800;font-size:18px}
+.type small{display:block;font-weight:500;color:var(--muted);font-size:14px;margin-top:4px}
+.why{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.why li{list-style:none;padding:18px 20px;border-radius:14px;background:var(--card);border:1px solid var(--line)}
+.why li b{color:var(--green)}
+.ph{border:1px dashed rgba(245,197,66,.6)!important}
+.tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:1px;color:#1b1300;background:var(--gold);padding:3px 8px;border-radius:6px;margin-bottom:12px}
+details{border:1px solid var(--line);border-radius:14px;background:var(--card);margin-bottom:10px;padding:0 20px}
+summary{cursor:pointer;font-weight:800;padding:18px 0;list-style:none;display:flex;justify-content:space-between}
+summary::after{content:"+";color:var(--green);font-size:22px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);padding-bottom:18px}
+.final{text-align:center}
+.final .glow{max-width:640px;margin:26px auto 0;text-align:left}
+footer{border-top:1px solid var(--line);padding:36px 0 110px;color:var(--muted);font-size:13px}
+footer .lic{color:var(--text);font-weight:700}
+.sticky{display:none}
+/* reveal */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+@media (max-width:900px){
+ .hero{padding:22px 0 40px}
+ .hero-grid{grid-template-columns:1fr;gap:22px}
+ .lead{font-size:16px}
+ .triad{margin:14px 0 4px}
+ .hero-call{display:none}
+ .cards,.types{grid-template-columns:1fr}
+ .why{grid-template-columns:1fr}
+ .stats{grid-template-columns:1fr 1fr}
+ section{padding:60px 0}
+ .call .lbl{display:none}
+ .logo{font-size:15px}.call{padding:8px 12px;font-size:14px}
+ .hero .lead,.hero .triad{display:none}
+ h1{font-size:32px;margin:12px 0 4px}
+ .form{padding:20px}.form p.sub{margin-bottom:6px}
+ .sticky{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;gap:10px}
+ .sticky a{flex:1;text-align:center;padding:15px;border-radius:14px;font-weight:900;text-decoration:none}
+ .sticky .c1{background:var(--gold);color:#1b1300}
+ .sticky .c2{background:var(--green);color:#04140c}
+}
+@media (max-width:420px){.row{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ .reveal{opacity:1;transform:none}.divider{width:120px}
+}
+
+/* v2 media */
+.hero{position:relative;overflow:hidden}
+.hero-media{position:absolute;inset:0;z-index:0;background:#05080a url(assets/hero.webp) center/cover no-repeat}
+.hero-media video{width:100%;height:100%;object-fit:cover;display:block}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,8,10,.92) 0%,rgba(5,8,10,.72) 50%,rgba(5,8,10,.55) 100%),linear-gradient(0deg,#05080a 0%,transparent 30%)}
+.hero .hero-grid{position:relative;z-index:1}
+.mframe{position:relative;border-radius:18px;overflow:hidden;border:1px solid rgba(25,230,140,.35);box-shadow:0 0 0 1px rgba(245,197,66,.08),0 0 30px -6px rgba(25,230,140,.45);animation:fglow 3.2s ease-in-out infinite}
+@keyframes fglow{0%,100%{box-shadow:0 0 0 1px rgba(245,197,66,.08),0 0 22px -8px rgba(25,230,140,.35)}50%{box-shadow:0 0 0 1px rgba(245,197,66,.25),0 0 42px -4px rgba(25,230,140,.6)}}
+.mframe img{display:block;width:100%;height:100%;object-fit:cover;transition:transform 1.2s ease}
+.card:hover .mframe img,.type:hover img{transform:scale(1.06)}
+.type{padding:0;overflow:hidden}
+.type .mframe{border-radius:0;border:0;border-bottom:1px solid rgba(25,230,140,.3);aspect-ratio:4/3;animation:none;box-shadow:none}
+.type .tx{padding:16px 18px}
+.type:hover{border-color:rgba(25,230,140,.55);box-shadow:0 0 34px -10px rgba(25,230,140,.6)}
+.band{margin-bottom:34px;aspect-ratio:21/7}
+.band::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,8,10,.65),transparent 45%,transparent 60%,rgba(5,8,10,.5))}
+.band span{position:absolute;left:28px;bottom:22px;z-index:1;font-weight:900;font-size:clamp(20px,2.6vw,32px)}
+.why-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:26px;align-items:stretch}
+.why-grid .mframe{min-height:100%}
+.why-grid .why{grid-template-columns:1fr}
+.ai-note{font-size:11px;color:var(--muted);margin-top:8px}
+@media (max-width:900px){.types{grid-template-columns:1fr 1fr;gap:10px}.type .tx{padding:12px;font-size:15px}.type small{font-size:12px}.hero-media{background-image:url(assets/hero-mobile.webp)}.hero-media::after{background:rgba(5,8,10,.78)}.band{aspect-ratio:16/9}.why-grid{grid-template-columns:1fr}.why-grid .mframe{aspect-ratio:4/3}}
+@media (prefers-reduced-motion:reduce){.hero-media video{display:none}}
+</style>
+<meta name=robots content=noindex>
+</head>
+<body>
+<div class="aurora" aria-hidden="true"></div><div class="grid-bg" aria-hidden="true"></div>
+
+<header><div class="wrap nav">
+ <a class="logo" href="#top">SELL MY <span>BUILDING</span> TAMPA<small>by Suarez Global</small></a>
+ <a class="call" href="tel:+18135445781"><i class="dot"></i><span class="lbl">Call</span> (813) 544-5781</a>
+</div></header>
+
+<main id="top">
+<section class="hero">
+ <div class="hero-media" aria-hidden="true">
+  <video id="herovid" muted loop playsinline preload="none" data-src-webm="assets/hero.webm" data-src-mp4="assets/hero.mp4"></video>
+ </div>
+ <div class="wrap hero-grid">
+ <div>
+  <span class="eyebrow">● Tampa Bay direct buyer</span>
+  <h1>Sell your Tampa building. <span class="shine">Fast. <span style="white-space:nowrap">As-is.</span> Direct.</span></h1>
+  <p class="lead">We buy multifamily and commercial buildings across Tampa Bay. Tenants in place. Deferred maintenance is fine. No listing, no showings, no commissions.</p>
+  <div class="triad"><span>No commissions</span><span>No repairs</span><span>No obligation</span></div>
+  <p class="hero-call">Rather talk now? Call <a href="tel:+18135445781">(813) 544-5781</a></p>
+ </div>
+ <div class="glow" id="offer">
+  <!-- TODO(backend): POST this form to the lead intake endpoint (save to Suarez CRM first, then SendGrid). Add spam protection and consent text review (Hayes) before launch. -->
+  <form class="form" action="javascript:void(0)" data-form>
+   <h2>Get your offer on your building</h2>
+   <p class="sub">Takes 60 seconds. We keep your info private. See our <a href="privacy.html" style="color:var(--gold)">Privacy Policy</a>.</p>
+   <div class="row">
+    <div><label for="n1">Name</label><input id="n1" name="name" autocomplete="name" required></div>
+    <div><label for="p1">Phone</label><input id="p1" name="phone" type="tel" autocomplete="tel" required></div>
+   </div>
+   <label for="e1">Email</label><input id="e1" name="email" type="email" autocomplete="email" required>
+   <label for="a1">Property address</label><input id="a1" name="address" autocomplete="street-address" placeholder="Street, city" required>
+   <div class="row">
+    <div><label for="t1">Property type</label><select id="t1" name="property_type" required>
+     <option value="">Select</option><option>Multifamily</option><option>Commercial/Retail</option><option>Office</option><option>Industrial</option><option>Mixed-use</option><option>Other</option></select></div>
+    <div><label for="w1">Timeline (optional)</label><select id="w1" name="timeline">
+     <option value="">Select</option><option>ASAP</option><option>1 to 3 months</option><option>3 to 6 months</option><option>Just exploring</option></select></div>
+   </div>
+   <input type="hidden" name="consent_text" value="By submitting, you agree Suarez Global Ventures LLC may contact you about your property by call, text or email at the number and email you provided, including by automated means. Consent is not a condition of any sale. Msg and data rates may apply. Reply STOP to opt out. See our Privacy Policy.">
+   <input type="hidden" name="consent_timestamp" value="">
+   <input type="hidden" name="page_url" value="">
+   <button class="btn" type="submit">Get My Offer</button>
+   <p class="consent">By submitting, you agree Suarez Global Ventures LLC may contact you about your property by call, text or email at the number and email you provided, including by automated means. Consent is not a condition of any sale. Msg and data rates may apply. Reply STOP to opt out. See our <a href="privacy.html">Privacy Policy</a>.</p>
+   <div class="ok" role="status">Coming soon. Online offers open shortly. Call (813) 544-5781 now.</div>
+   <p class="fine">No obligation. <a href="privacy.html">We don't sell your info.</a></p>
+  </form>
+ </div>
+</div></section>
+
+<div class="wrap reveal">
+ <div class="stats">
+  <div class="stat"><b>1031</b><span>Exchange friendly</span></div>
+  <div class="stat"><b>6</b><span>Property types we buy</span></div>
+  <div class="stat"><b>3</b><span>Simple steps</span></div>
+  <div class="stat"><b>$0</b><span>Commissions you pay</span></div>
+ </div>
+</div>
+
+<section id="how"><div class="wrap reveal">
+ <div class="kicker">How it works</div><h2 class="t">Three steps. No runaround.</h2><div class="divider"></div>
+ <div class="mframe band"><img src="assets/how-band.webp" alt="City skyline at dusk" loading="lazy" decoding="async" width="1920" height="823"><span>Offer to closing on your terms.</span></div>
+ <div class="cards">
+  <div class="card"><div class="num">1</div><h3>Tell us about the building</h3><p>Send the address and a few details. Rent roll and T12 help if you have them.</p></div>
+  <div class="card"><div class="num">2</div><h3>Get a clear offer</h3><p>We review the numbers and walk the property. You get a straight offer with no games.</p></div>
+  <div class="card"><div class="num">3</div><h3>We work around your timeline.</h3><p>Pick the closing date that works for you. We handle the heavy lifting.</p></div>
+ </div>
+</div></section>
+
+<section id="buy"><div class="wrap reveal">
+ <div class="kicker">What we buy</div><h2 class="t">If it has walls and tenants, let's talk.</h2><div class="divider"></div>
+ <div class="types">
+  <div class="type"><div class="mframe"><img src="assets/multifamily.webp" alt="Multifamily building" loading="lazy" decoding="async" width="900" height="675"></div><div class="tx">Multifamily<small>Duplexes to apartment complexes</small></div></div>
+  <div class="type"><div class="mframe"><img src="assets/retail.webp" alt="Commercial and retail building" loading="lazy" decoding="async" width="900" height="675"></div><div class="tx">Commercial and retail<small>Strip centers, storefronts, single tenant</small></div></div>
+  <div class="type"><div class="mframe"><img src="assets/office.webp" alt="Office building" loading="lazy" decoding="async" width="900" height="675"></div><div class="tx">Office<small>Small office to medical office</small></div></div>
+  <div class="type"><div class="mframe"><img src="assets/industrial.webp" alt="Industrial building" loading="lazy" decoding="async" width="900" height="675"></div><div class="tx">Industrial<small>Warehouse, flex, light industrial</small></div></div>
+  <div class="type"><div class="mframe"><img src="assets/mixeduse.webp" alt="Mixed-use building" loading="lazy" decoding="async" width="900" height="675"></div><div class="tx">Mixed-use<small>Retail below, units above</small></div></div>
+  <div class="type"><div class="mframe"><img src="assets/other.webp" alt="Other building" loading="lazy" decoding="async" width="900" height="675"></div><div class="tx">Other<small>Land with income, special use. Ask us.</small></div></div>
+ </div>
+</div></section>
+
+<section id="why"><div class="wrap reveal">
+ <div class="kicker">Why sell to us</div><h2 class="t">Built for building owners.</h2><div class="divider"></div>
+ <div class="why-grid">
+ <div class="mframe"><img src="assets/why.webp" alt="Apartment courtyard with pool at sunset" loading="lazy" decoding="async" width="900" height="675"></div>
+ <ul class="why">
+  <li><b>Tenants stay.</b> No need to empty units or stage anything.</li>
+  <li><b>As-is.</b> Roof, HVAC, deferred maintenance. We price it in.</li>
+  <li><b>No commissions.</b> We buy direct. No listing fees.</li>
+  <li><b>Quiet sale.</b> No signs, no tours, no tenant panic.</li>
+  <li><b>Local.</b> Based in Tampa Bay. We know these streets.</li>
+  <li><b>Hard situations welcome.</b> Partner buyouts, estates, vacancy, code issues, 1031 timing.</li>
+  <li style="list-style:none;font-size:.8em;opacity:.75">We're not tax advisors. Talk to your own tax professional about a 1031 exchange.</li>
+ </ul>
+ </div>
+ <p class="ai-note">Images are illustrative, not properties we own or have bought.</p>
+</div></section>
+
+<section id="faq"><div class="wrap reveal">
+ <div class="kicker">FAQ</div><h2 class="t">Straight answers.</h2><div class="divider"></div>
+ <details><summary>Do you only buy houses?</summary><p>No. We focus on multifamily and commercial buildings in Tampa Bay.</p></details>
+ <details><summary>Do my tenants have to move out?</summary><p>No. We buy with tenants in place and honor existing leases.</p></details>
+ <details><summary>Do I pay commissions or fees?</summary><p>No commissions when you sell direct to us. Your offer spells out every cost.</p></details>
+ <details><summary>What info do you need?</summary><p>The address to start. A rent roll and T12 speed things up.</p></details>
+ <details><summary>Am I obligated if I ask for an offer?</summary><p>No. Ask, review, and decide. No pressure.</p></details>
+ <details><summary>Are you licensed?</summary><p>Yes. Javier Suarez is a Florida Sales Associate, SL3626162, with Realty ONE Group Advantage.</p></details>
+</div></section>
+
+<section class="final"><div class="wrap reveal">
+ <div class="kicker">Ready when you are</div><h2 class="t">Find out what your building is worth to a direct buyer.</h2>
+ <div class="glow">
+  <!-- TODO(backend): same POST endpoint as the hero form. -->
+  <form class="form" action="javascript:void(0)" data-form>
+   <div class="row">
+    <div><label for="n2">Name</label><input id="n2" name="name" required></div>
+    <div><label for="p2">Phone</label><input id="p2" name="phone" type="tel" required></div>
+   </div>
+   <label for="e2">Email</label><input id="e2" name="email" type="email" required>
+   <label for="a2">Property address</label><input id="a2" name="address" required>
+   <label for="t2">Property type</label><select id="t2" name="property_type" required><option value="">Select</option><option>Multifamily</option><option>Commercial/Retail</option><option>Office</option><option>Industrial</option><option>Mixed-use</option><option>Other</option></select>
+   <input type="hidden" name="consent_text" value="By submitting, you agree Suarez Global Ventures LLC may contact you about your property by call, text or email at the number and email you provided, including by automated means. Consent is not a condition of any sale. Msg and data rates may apply. Reply STOP to opt out. See our Privacy Policy.">
+   <input type="hidden" name="consent_timestamp" value="">
+   <input type="hidden" name="page_url" value="">
+   <button class="btn" type="submit">Get My Offer</button>
+   <p class="consent">By submitting, you agree Suarez Global Ventures LLC may contact you about your property by call, text or email at the number and email you provided, including by automated means. Consent is not a condition of any sale. Msg and data rates may apply. Reply STOP to opt out. See our <a href="privacy.html">Privacy Policy</a>.</p>
+   <div class="ok" role="status">Coming soon. Call (813) 544-5781 now.</div>
+   <p class="fine">Or call <a href="tel:+18135445781" style="color:var(--gold);font-weight:800">(813) 544-5781</a></p>
+  </form>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+ <p><b style="color:var(--text)">Suarez Global Ventures LLC, a direct buyer.</b> · Tampa Bay, Florida · <a href="tel:+18135445781">(813) 544-5781</a></p>
+ <p class="lic" style="margin-top:8px">Javier Suarez, Florida Sales Associate SL3626162, Realty ONE Group Advantage</p>
+ <p style="margin-top:8px">Javier Suarez is a licensed Florida real estate sales associate and is a principal of the buyer. He is acting as a buyer, not as your agent.</p>
+ <p style="margin-top:8px">We are a direct buyer. Submitting the form does not create an obligation to sell. © 2026 Suarez Global Ventures LLC. <a href="privacy.html">Privacy Policy</a></p>
+</div></footer>
+
+<div class="sticky"><a class="c1" href="tel:+18135445781">Call now</a><a class="c2" href="#offer">Get offer</a></div>
+
+<script>
+(function(){const v=document.getElementById('herovid');
+ if(matchMedia('(prefers-reduced-motion: reduce)').matches||matchMedia('(max-width:900px)').matches)return; // mobile keeps the poster to stay light
+ const c=navigator.connection;if(c&&(c.saveData||/2g/.test(c.effectiveType||'')))return;
+ [['webm','video/webm'],['mp4','video/mp4']].forEach(([k,t])=>{const so=document.createElement('source');so.src=v.dataset['src'+k[0].toUpperCase()+k.slice(1)];so.type=t;v.appendChild(so)});
+ v.poster='assets/hero.webp';v.load();v.play().catch(()=>{});})();
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('[data-form] [name=page_url]').forEach(i=>i.value=location.href);
+document.querySelectorAll('[data-form]').forEach(f=>f.addEventListener('submit',e=>{
+ f.querySelector('[name=consent_timestamp]').value=new Date().toISOString();
+ f.querySelector('[name=page_url]').value=location.href;
+ e.preventDefault(); // TODO(backend): replace with fetch() POST to intake endpoint (send consent_text, consent_timestamp, page_url)
+ f.querySelector('.ok').style.display='block';
+}));
+</script>
+</body>
+</html>
