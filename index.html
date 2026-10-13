@@ -342,7 +342,7 @@ forms.forEach(f=>f.addEventListener('submit',async e=>{
  b.disabled=false;b.textContent=lbl;
  if(j&&j.ok===true){f.classList.add('done');f.querySelector('.win').focus();return}
  f._tok='';if(window.turnstile&&f._ts!==undefined)turnstile.reset(f._ts);
- say(f,!st?ERR.net:(j&&ERR[j.error])||ERR.other);
+ say(f,!st?ERR.net:(j&&typeof j.error==='string'&&Object.hasOwn(ERR,j.error)?ERR[j.error]:ERR.other));
 }));
 </script>
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=smbtTs" async defer></script>
