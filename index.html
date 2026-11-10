@@ -56,6 +56,7 @@ input:focus,select:focus{outline:none;border-color:var(--green);box-shadow:0 0 0
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(25,230,140,.6)}70%{box-shadow:0 0 0 16px rgba(25,230,140,0)}100%{box-shadow:0 0 0 0 rgba(25,230,140,0)}}
 .consent{font-size:11.5px;line-height:1.45;color:#b8c6c1;margin-top:10px}.consent a,.fine a{color:var(--gold);text-decoration:underline}
 .fine{font-size:11.5px;color:var(--muted);margin-top:10px}
+.smsc{display:flex!important;gap:10px;align-items:flex-start;font-size:12px!important;font-weight:400!important;line-height:1.45;color:#b8c6c1!important;margin:14px 0 2px!important;text-transform:none!important;letter-spacing:0!important;cursor:pointer}.smsc input{width:18px;height:18px;padding:0;margin-top:1px;flex:0 0 auto;accent-color:#19e68c}
 .hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
 .ts{margin-top:14px;min-height:65px}
 .btn[disabled]{opacity:.7;cursor:wait;animation:btnmove 1s linear infinite}
@@ -158,7 +159,6 @@ footer .lic{color:var(--text);font-weight:700}
 @media (max-width:900px){.types{grid-template-columns:1fr 1fr;gap:10px}.type .tx{padding:12px;font-size:15px}.type small{font-size:12px}.hero-media{background-image:url(assets/hero-mobile.webp)}.hero-media::after{background:rgba(5,8,10,.78)}.band{aspect-ratio:16/9}.why-grid{grid-template-columns:1fr}.why-grid .mframe{aspect-ratio:4/3}}
 @media (prefers-reduced-motion:reduce){.hero-media video{display:none}}
 </style>
-<meta name=robots content=noindex>
 </head>
 <body>
 <div class="aurora" aria-hidden="true"></div><div class="grid-bg" aria-hidden="true"></div>
@@ -197,16 +197,17 @@ footer .lic{color:var(--text);font-weight:700}
     <div><label for="w1">Timeline (optional)</label><select id="w1" name="timeline">
      <option value="">Select</option><option>ASAP</option><option>1 to 3 months</option><option>3 to 6 months</option><option>Just exploring</option></select></div>
    </div>
-   <input type="hidden" name="consent_text" value="By submitting, you agree Suarez Global Ventures LLC may contact you about your property by call, text or email at the number and email you provided, including by automated means. Consent is not a condition of any sale. Msg and data rates may apply. Reply STOP to opt out. See our Privacy Policy.">
+   <input type="hidden" name="consent_text" value="By submitting, you agree we may contact you about your property by call or email. See our Privacy Policy.">
    <input type="hidden" name="consent_timestamp" value="">
    <input type="hidden" name="page_url" value="">
    <div class="hp" aria-hidden="true"><label>Company website<input name="company_website" tabindex="-1" autocomplete="off"></label></div>
+   <label class="smsc" for="sc1"><input type="checkbox" id="sc1" name="sms_consent" value="1"><span data-sms-text>Text me about my property. I agree Suarez Global Ventures LLC may send me automated text messages about my property inquiry at the number above. Consent is not a condition of any sale. Msg frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out, HELP for help.</span></label>
    <div class="ts" data-ts></div>
    <button class="btn" type="submit">Get My Offer</button>
-   <p class="consent">By submitting, you agree Suarez Global Ventures LLC may contact you about your property by call, text or email at the number and email you provided, including by automated means. Consent is not a condition of any sale. Msg and data rates may apply. Reply STOP to opt out. See our <a href="privacy.html">Privacy Policy</a>.</p>
+   <p class="consent">By submitting, you agree we may contact you about your property by call or email. See our <a href="privacy.html">Privacy Policy</a>.</p>
    <div class="msg" role="status" aria-live="polite"></div>
    <p class="fine">No obligation. <a href="privacy.html">We don't sell your info.</a></p>
-  <div class="win" tabindex="-1"><div class="chk">✓</div><h3>You're in. Your offer is in motion.</h3><p>We got your building. Javier's team will reach out from (813) 544-5781 soon.</p><p>Can't wait? <a href="tel:+18135445781">Call (813) 544-5781</a></p></div>
+  <div class="win" tabindex="-1"><div class="chk">✓</div><h3>You're in. Your offer is in motion.</h3><p>We got your building. Javier's team will call you from (813) 544-5781 soon.</p><p>Can't wait? <a href="tel:+18135445781">Call (813) 544-5781</a></p></div>
   </form>
  </div>
 </div></section>
@@ -247,7 +248,7 @@ footer .lic{color:var(--text);font-weight:700}
  <div class="why-grid">
  <div class="mframe"><img src="assets/why.webp" alt="Apartment courtyard with pool at sunset" loading="lazy" decoding="async" width="900" height="675"></div>
  <ul class="why">
-  <li><b>Tenants stay.</b> No need to empty units or stage anything.</li>
+  <li><b>Tenants can stay.</b> No need to empty units or stage anything.</li>
   <li><b>As-is.</b> Roof, HVAC, deferred maintenance. We price it in.</li>
   <li><b>No commissions.</b> We buy direct. No listing fees.</li>
   <li><b>Quiet sale.</b> No signs, no tours, no tenant panic.</li>
@@ -262,8 +263,8 @@ footer .lic{color:var(--text);font-weight:700}
 <section id="faq"><div class="wrap reveal">
  <div class="kicker">FAQ</div><h2 class="t">Straight answers.</h2><div class="divider"></div>
  <details><summary>Do you only buy houses?</summary><p>No. We focus on multifamily and commercial buildings in Tampa Bay.</p></details>
- <details><summary>Do my tenants have to move out?</summary><p>No. We buy with tenants in place and honor existing leases.</p></details>
- <details><summary>Do I pay commissions or fees?</summary><p>No commissions when you sell direct to us. Your offer spells out every cost.</p></details>
+ <details><summary>Do my tenants have to move out?</summary><p>No. We buy with tenants in place and take over existing leases on their current terms.</p></details>
+ <details><summary>Do I pay commissions or fees?</summary><p>No commissions when you sell direct to us. Your offer spells out every cost, including any closing costs.</p></details>
  <details><summary>What info do you need?</summary><p>The address to start. A rent roll and T12 speed things up.</p></details>
  <details><summary>Am I obligated if I ask for an offer?</summary><p>No. Ask, review, and decide. No pressure.</p></details>
  <details><summary>Are you licensed?</summary><p>Yes. Javier Suarez is a Florida Sales Associate, SL3626162, with Realty ONE Group Advantage.</p></details>
@@ -280,16 +281,17 @@ footer .lic{color:var(--text);font-weight:700}
    <label for="e2">Email</label><input id="e2" name="email" type="email" required>
    <label for="a2">Property address</label><input id="a2" name="address" required>
    <label for="t2">Property type</label><select id="t2" name="property_type" required><option value="">Select</option><option>Multifamily</option><option>Commercial/Retail</option><option>Office</option><option>Industrial</option><option>Mixed-use</option><option>Other</option></select>
-   <input type="hidden" name="consent_text" value="By submitting, you agree Suarez Global Ventures LLC may contact you about your property by call, text or email at the number and email you provided, including by automated means. Consent is not a condition of any sale. Msg and data rates may apply. Reply STOP to opt out. See our Privacy Policy.">
+   <input type="hidden" name="consent_text" value="By submitting, you agree we may contact you about your property by call or email. See our Privacy Policy.">
    <input type="hidden" name="consent_timestamp" value="">
    <input type="hidden" name="page_url" value="">
    <div class="hp" aria-hidden="true"><label>Company website<input name="company_website" tabindex="-1" autocomplete="off"></label></div>
+   <label class="smsc" for="sc2"><input type="checkbox" id="sc2" name="sms_consent" value="1"><span data-sms-text>Text me about my property. I agree Suarez Global Ventures LLC may send me automated text messages about my property inquiry at the number above. Consent is not a condition of any sale. Msg frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out, HELP for help.</span></label>
    <div class="ts" data-ts></div>
    <button class="btn" type="submit">Get My Offer</button>
-   <p class="consent">By submitting, you agree Suarez Global Ventures LLC may contact you about your property by call, text or email at the number and email you provided, including by automated means. Consent is not a condition of any sale. Msg and data rates may apply. Reply STOP to opt out. See our <a href="privacy.html">Privacy Policy</a>.</p>
+   <p class="consent">By submitting, you agree we may contact you about your property by call or email. See our <a href="privacy.html">Privacy Policy</a>.</p>
    <div class="msg" role="status" aria-live="polite"></div>
    <p class="fine">Or call <a href="tel:+18135445781" style="color:var(--gold);font-weight:800">(813) 544-5781</a></p>
-  <div class="win" tabindex="-1"><div class="chk">✓</div><h3>You're in. Your offer is in motion.</h3><p>We got your building. Javier's team will reach out from (813) 544-5781 soon.</p><p>Can't wait? <a href="tel:+18135445781">Call (813) 544-5781</a></p></div>
+  <div class="win" tabindex="-1"><div class="chk">✓</div><h3>You're in. Your offer is in motion.</h3><p>We got your building. Javier's team will call you from (813) 544-5781 soon.</p><p>Can't wait? <a href="tel:+18135445781">Call (813) 544-5781</a></p></div>
   </form>
  </div>
 </div></section>
@@ -336,6 +338,7 @@ forms.forEach(f=>f.addEventListener('submit',async e=>{
  const body={name:v('name'),phone:v('phone'),email:v('email'),address:v('address'),property_type:v('property_type'),timeline:v('timeline'),
   company_website:f.querySelector('[name=company_website]').value,turnstile_token:tok,form:f.dataset.form,utm:utm(),
   consent_text:v('consent_text'),consent_timestamp:v('consent_timestamp'),page_url:v('page_url')};
+ const sc=f.querySelector('[name=sms_consent]');body.sms_consent=!!(sc&&sc.checked);if(body.sms_consent)body.sms_consent_text=f.querySelector('[data-sms-text]').textContent.trim();
  const b=f.querySelector('.btn'),lbl=b.textContent;b.disabled=true;b.textContent='Locking in your offer…';
  let st=0,j=null;
  try{const r=await fetch(SMBT_URL,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});st=r.status;j=await r.json().catch(()=>null)}catch(_){}
